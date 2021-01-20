@@ -141,6 +141,9 @@ img{
 	top: 60px;
 	height: 350px;
 	width: 400px;
+	padding: 40px;
+	z-index: 100;
+	justify-self: flex-end;
 }
 
 .grid{
@@ -152,12 +155,40 @@ img{
 	height: 100%;
 }
 
+.showcase-form .form-control{
+	margin: 30px;
+}
+
+.showcase-form input[type='text'],
+.showcase-form input[type='email']{
+	border: none;
+	border-bottom: 1px  solid;
+	width: 100%;
+	padding: 3px;
+	font-size: 16px;
+}
+
+.showcase-form input:focus{
+	outline: none;
+}
 /* Utilities */
 .container{
 	overflow: auto;
 	max-width: 1100px;
 	margin: 0 auto;
 	padding: 0 40px;
+}
+
+.btn{
+	display: inline-block;
+	padding: 10px 30px;
+	cursor: pointer;
+	background: var(--CorDeBase);
+	color: var(--CorDeTexto);
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0, 0.5);
+	
 }
 
 .card{
